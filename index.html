@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://petepop.com.br/wp-content/uploads/2022/09/reproducao-instagram.jpg') center/cover no-repeat fixed;
+            filter: blur(15px); /* Ajusta el valor de blur según lo que desees */
+            z-index: -1;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-style: italic;
+        }
+
+        p {
+            font-size: 1.5em;
+            font-style: italic;
+        }
+    </style>
+    <title>forked</title>
+</head>
+<body>
+    <div class="content">
+        <p style="font-style: italic; font-size: 2em;">Forked was here :O</p>
+    </div>
+</body>
+</html>
